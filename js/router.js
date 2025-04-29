@@ -57,12 +57,13 @@ function RenderContactPage() {
 
 function RenderGalleryPage() {
     document.querySelector('main').innerHTML = `
-        <div class="modal" id="modal">
+    <div class="gallery" id="gallery"></div>
+    <div class="modal" id="modal">
         <div class="modal-content">
             <button class="close-btn" id="closeBtn">Zamknij</button>
             <img src="" alt="Powiększone zdjęcie" id="modalImg">
         </div>
-        </div>`;
+    </div>`;
 
     createGallery();
 }
